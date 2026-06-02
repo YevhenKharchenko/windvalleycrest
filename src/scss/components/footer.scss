@@ -1,0 +1,132 @@
+.footer {
+  background: #010e23;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-bg-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 375px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    padding: 52px 0;
+    max-width: 1440px;
+  }
+}
+
+.footer-container {
+  @include media(desktop) {
+  }
+}
+
+.footer-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(desktop) {
+    flex-direction: row;
+  }
+}
+
+.footer-title-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: max-content;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 0.85714;
+  color: #ffc02b;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-title-span {
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-title-text {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-text {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 28px;
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: 1.55556;
+    margin-bottom: 0;
+    margin-left: 163px;
+  }
+}
+
+.footer-nav {
+  @include media(desktop) {
+    margin-left: auto;
+  }
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-list-item {
+  @include media(desktop) {
+  }
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: 1.55556;
+  }
+}

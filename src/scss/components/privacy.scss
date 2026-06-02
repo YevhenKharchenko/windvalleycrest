@@ -1,0 +1,102 @@
+.policy-section {
+  background: #00164e;
+  padding-top: 126px;
+  padding-bottom: 80px;
+
+  @include media(desktop) {
+    padding-top: 137px;
+    padding-bottom: 100px;
+  }
+}
+
+.policy-section h1 {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: justify;
+  color: #fff;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    margin-bottom: 52px;
+  }
+}
+
+.policy-section h2 {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: justify;
+  color: #fff;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section h3 {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: justify;
+  color: #fff;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section h4 {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: justify;
+  color: #fff;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section p {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: justify;
+  color: #fff;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section li {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: justify;
+  color: #fff;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section a {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section span {
+  @include media(desktop) {
+  }
+}

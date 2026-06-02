@@ -1,0 +1,104 @@
+.modes-section {
+  background: linear-gradient(180deg, #1b9bfe 0%, #000c20 100%);
+
+  @include media(desktop) {
+  }
+}
+
+.modes-bg-wrapper {
+  padding-top: 64px;
+  padding-bottom: 54px;
+  max-width: 375px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 1440px;
+  }
+}
+
+.modes-container {
+  @include media(desktop) {
+  }
+}
+
+.modes-content-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.modes-text-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.modes-title {
+  @include media(desktop) {
+  }
+}
+
+.modes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 48px;
+  }
+}
+
+.modes-list-item {
+  box-shadow: inset 0 0 30px 2px #e9f6ff;
+  background: rgba(255, 255, 255, 0.05);
+  border: 6px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  padding: 34px 14px;
+
+  @include media(desktop) {
+    padding: 62px 46px;
+    min-width: 568px;
+  }
+}
+
+.modes-item-title {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: #ffc02b;
+  margin-bottom: 28px;
+
+  @include media(desktop) {
+  }
+}
+
+.modes-item-text {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.modes-text {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.55556;
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 1.33333;
+    margin-top: 52px;
+  }
+}
