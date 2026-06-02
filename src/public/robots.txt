@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://clearhollow.site/sitemap.xml
+Sitemap: https://windvalleycrest.pro/sitemap.xml

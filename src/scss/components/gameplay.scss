@@ -1,21 +1,24 @@
 .gameplay-section {
-  background: linear-gradient(360deg, #003486 0%, #000c20 100%);
-
   @include media(desktop) {
   }
 }
 
 .gameplay-bg-wrapper {
   padding-top: 64px;
-  padding-bottom: 64px;
+  padding-bottom: 381px;
   max-width: 375px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  background-image: url(../img/gameplay/gameplay-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
 
   @include media(desktop) {
     padding-top: 100px;
     padding-bottom: 100px;
     max-width: 1440px;
+    background-image: url(../img/gameplay/gameplay-bg-desk.png);
+    background-position: bottom right;
   }
 }
 
@@ -25,99 +28,175 @@
 }
 
 .gameplay-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 52px;
-
   @include media(desktop) {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 792px;
   }
 }
 
 .gameplay-text-wrapper {
   @include media(desktop) {
-    max-width: 571px;
   }
 }
 
 .gameplay-title {
+  text-align: center;
+  margin-bottom: 20px;
+
   @include media(desktop) {
+  }
+}
+
+.gameplay-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  text-align: center;
+  color: #008afb;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.gameplay-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2a2a2a;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: 1.55556;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
   }
 }
 
 .gameplay-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px;
 
   @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
   }
 }
 
 .gameplay-list-item {
   box-shadow:
-    0 6px 12px 0 rgba(17, 8, 33, 0.4),
-    0 4px 0 0 #26408d;
-  background: linear-gradient(180deg, #1b9dff 0%, #105e99 100%);
-  border: 2px solid #d0fff7;
+    0 4px 6px -4px rgba(0, 0, 0, 0.1),
+    0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border: 4px solid #008afb;
   border-radius: 24px;
-  padding: 18px;
+  padding: 20px 16px;
   display: flex;
-  align-items: start;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+
+  &:last-child {
+    background: #e0f2fe;
+    border: 4px solid #86ceff;
+  }
 
   @include media(desktop) {
-    padding: 26px 34px;
-    min-width: 568px;
+    padding: 32px;
+    min-width: 388px;
   }
 }
 
-.gameplay-item-number {
-  font-family: 'Kanit', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1;
-  color: #fff;
+.gameplay-icon-wrapper {
+  background: #e0f2fe;
+  border-radius: 33554400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 80px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 16px;
 
   @include media(desktop) {
   }
 }
 
-.gameplay-item-text-wrapper {
+.gameplay-icon {
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+
   @include media(desktop) {
   }
 }
 
 .gameplay-item-title {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.42857;
-  color: #fff;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #0a0a0a;
+  margin-bottom: 8px;
 
   @include media(desktop) {
   }
 }
 
 .gameplay-item-text {
-  font-family: 'Kanit', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 1.42857;
-  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #2a2a2a;
 
   @include media(desktop) {
   }
 }
 
-.gameplay-img {
-  margin-left: auto;
-  margin-right: auto;
+.gameplay-item-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 
   @include media(desktop) {
-    min-width: 577px;
-    margin: 0;
+  }
+}
+
+.gameplay-bottom-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #2a2a2a;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-bottom-item-middle-text {
+  font-weight: 700;
+  color: #1a1a1a;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-bottom-item-bottom-text {
+  font-size: 18px;
+  line-height: 1.55556;
+
+  @include media(desktop) {
   }
 }
