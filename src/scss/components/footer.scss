@@ -1,18 +1,18 @@
 .footer {
-  background: #010e23;
+  background: #fff;
+  border-top: 4px solid #008afb;
 
   @include media(desktop) {
   }
 }
 
 .footer-bg-wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 32px;
+  padding-bottom: 36px;
   max-width: 375px;
   margin: 0 auto;
 
   @include media(desktop) {
-    padding: 52px 0;
     max-width: 1440px;
   }
 }
@@ -26,77 +26,73 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 24px;
 
   @include media(desktop) {
     flex-direction: row;
+    justify-content: center;
+    gap: 50px;
   }
 }
 
-.footer-title-wrapper {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  gap: 6px;
-  margin-bottom: 20px;
+.footer-img {
+  min-width: 232px;
 
   @include media(desktop) {
-    margin-bottom: 0;
+  }
+}
+
+.footer-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(desktop) {
+    max-width: 328px;
   }
 }
 
 .footer-logo-link {
   display: flex;
-  justify-content: center;
   align-items: center;
-  max-width: max-content;
-  font-family: 'Kanit', sans-serif;
-  font-weight: 900;
-  font-size: 28px;
-  line-height: 0.85714;
-  color: #ffc02b;
-
-  @include media(desktop) {
-  }
-}
-
-.footer-title-span {
-  color: #fff;
-
-  @include media(desktop) {
-  }
-}
-
-.footer-title-text {
-  font-family: 'Kanit', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.55556;
-  color: #fff;
-
-  @include media(desktop) {
-  }
-}
-
-.footer-text {
-  font-family: 'Kanit', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.42857;
+  justify-content: center;
+  gap: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
   text-align: center;
-  color: #fff;
-  margin-bottom: 28px;
+  color: #1a1a1a;
+  margin-bottom: 5px;
 
   @include media(desktop) {
-    font-size: 18px;
-    line-height: 1.55556;
-    margin-bottom: 0;
-    margin-left: 163px;
+  }
+}
+
+.footer-logo-icon {
+  min-width: 40px;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-top-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #2a2a2a;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
   }
 }
 
 .footer-nav {
+  margin-bottom: 20px;
+
   @include media(desktop) {
-    margin-left: auto;
   }
 }
 
@@ -104,7 +100,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 28px;
+  gap: 32px;
 
   @include media(desktop) {
   }
@@ -119,14 +115,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #fff;
+  color: #2a2a2a;
 
   @include media(desktop) {
-    font-size: 18px;
-    line-height: 1.55556;
+  }
+}
+
+.footer-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  text-align: center;
+  color: #2a2a2a;
+
+  @include media(desktop) {
   }
 }
